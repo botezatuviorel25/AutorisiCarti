@@ -20,20 +20,22 @@ public class authorController {
         model.addAttribute("greeting", greetingText );
         model.addAttribute("someText", "Some random text");
         model.addAttribute("authorlist", getAuthor());
-        model.addAttribute("bookList", getBook());
+        //model.addAttribute("bookList", getBook());
 
         modelAndView.setViewName("authorsOverview");
         return modelAndView;
     }
     private List<Author> getAuthor() {
-        Author author1 = Author.builder();
-        .lastName("popescu");
-        .fristName("gigi");
-        return List.of(author1);
-    }
-    private List<Book> getBook(){
+        Author author1 = Author.builder()
+        .fristName("gigi")
+       .lastName("popescu").build();
 
-        return List.of(book1);
-    }
+
+        return List.of(author1);
+   }
+    //private List<Book> getBook(){
+
+      //  return List.of(book1);
+    //}
 
 }

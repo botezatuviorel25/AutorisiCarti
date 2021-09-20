@@ -29,15 +29,13 @@ public class AuthorEntity {
     private bookEntity bookEntity;
 
 
-    public AuthorEntity(String firstName, String lastName, bookEntity, bookEntity) {
-        super();
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.bookEntity = bookEntity;
-    }
+   // public AuthorEntity(String firstName, String lastName, bookEntity, bookEntity) {
+      //  super();
+        //this.firstName = firstName;
+       // this.lastName = lastName;
+//    }
 
-    public AuthorEntity() {
-        super();
-    }
+    //public AuthorEntity() {
+//    }
 
 }
