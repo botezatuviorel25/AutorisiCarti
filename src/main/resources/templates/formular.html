@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Tables -  Admin</title>
+    <title>Formular</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootCSS.css}"  />
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootCSS.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.css}" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
+
 </head>
 <body class="sb-nav-fixed">
 <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -104,91 +106,89 @@
             </div>
             <div class="sb-sidenav-footer">
                 <div class="small">Logged in as:</div>
-                Author and book
+                Start Bootstrap
             </div>
         </nav>
     </div>
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid px-4">
-                <h1 class="mt-4">Tables</h1>
+
                 <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Tables</li>
+                    <li class="breadcrumb-item active"></li>
                 </ol>
-                <div class="card mb-4">
-                    <div class="card-body">
-                        DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-                        <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
-                        .
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <i class="fas fa-table me-1"></i>
-                        DataTable Example
-                    </div>
-                    <div class="card-body">
-                        <table id="datatablesSimple">
-                            <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Gen</th>
-                                <th>Book</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Price book</th>
-                            </tr>
-                            </thead>
-                            <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Gen</th>
-                                <th>Book</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Price book</th>
-                            </tr>
-                            </tfoot>
-                            <tbody>
 
-                            <tr>
-                                <td>Vivian Harrell</td>
-                                <td>Action</td>
-                                <td>Mister</td>
-                                <td>62</td>
-                                <td>2009/02/14</td>
-                                <td>$4</td>
-                            </tr>
-                            <tr>
-                                <td>Timothy Mooney</td>
-                                <td>Fiction</td>
-                                <td>OZN</td>
-                                <td>37</td>
-                                <td>2008/12/11</td>
-                                <td>$13</td>
-                            </tr>
-                            <tr>
-                                <td>Jackson Bradshaw</td>
-                                <td>Horror</td>
-                                <td>Home sweet home</td>
-                                <td>65</td>
-                                <td>2008/09/26</td>
-                                <td>$6</td>
-                            </tr>
+                <div class="card-body">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationServer01" class="form-label">First name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" value=" " required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationServer02" class="form-label">Last name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02" value=" " required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
 
-                            <tr>
-                                <td>Donna Snider</td>
-                                <td>Horror</td>
-                                <td>Dracula</td>
-                                <td>27</td>
-                                <td>2011/01/25</td>
-                                <td>$1</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Agree to terms and conditions
+                                </label>
+                                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationServer01" class="form-label">Book name</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" value=" " required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationServer02" class="form-label"> Release date</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01" value=" " required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                                <label class="form-check-label" for="invalidCheck3">
+                                    Agree to terms and conditions
+                                </label>
+                                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
                 </div>
+
             </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
@@ -205,7 +205,11 @@
         </footer>
     </div>
 </div>
+
 <script th:src="@{/bootstrap/js/scripts.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.bundle.js}"></script>
+<script th:src="@{/bootstrap/js/bootstrap.esm.js}"></script>
 <script th:src="@{/bootstrap/assets/demo/chart-area-demo.js}"></script>
 <script th:src="@{/bootstrap/assets/demo/chart-pie-demo.js}"></script>
 <script th:src="@{/bootstrap/assets/demo/datatables-demo.js}"></script>
