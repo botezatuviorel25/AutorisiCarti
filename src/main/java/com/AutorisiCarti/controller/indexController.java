@@ -7,8 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 
 public class indexController {
-    // @Autowired
-    //   AuthorService authorService;
+;
 
     @GetMapping(value = "/index")
     public ModelAndView returnIndex() {
