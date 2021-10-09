@@ -28,7 +28,8 @@ public class authorController {
     private List<Author> getAuthor() {
         Author author1 = Author.builder()
         .fristName("gigi")
-       .lastName("popescu").build();
+       .lastName("popescu")
+                .build();
 
 
         return List.of(author1);
