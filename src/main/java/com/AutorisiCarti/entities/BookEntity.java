@@ -10,7 +10,7 @@ import javax.persistence.Id;
 @Entity(name="book")
 @Getter
 @Setter
-public class bookEntity {
+public class BookEntity {
 
     @Id
     private int bookId;
@@ -18,13 +18,13 @@ public class bookEntity {
     @Column
     private String bookName;
 
-    public bookEntity(int bookId, String bookName) {
+    public BookEntity(int bookId, String bookName) {
         super();
         this.bookId = bookId;
         this.bookName = bookName;
     }
 
-    public bookEntity() {
+    public BookEntity() {
         super();
     }
 }

@@ -188,6 +188,24 @@
                             </tbody>
                         </table>
                     </div>
+                    <div class="col-6">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <td>Firstname</td>
+                                <td>Lastname</td>
+                                <td>book</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="Author : ${AuthorList}">
+                                <td th:text="${author.firstName}"/>
+                                <td th:text="${author.lastName}"/>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </main>

@@ -10,7 +10,8 @@ import lombok.ToString;
 @ToString
 @Builder
 public class Author {
-    private String fristName;
+    private String firstName;
     private String lastName;
+
 
 }

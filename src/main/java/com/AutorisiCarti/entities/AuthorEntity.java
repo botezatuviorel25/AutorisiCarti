@@ -27,7 +27,7 @@ public class AuthorEntity {
     }
 
     @OneToOne(cascade = CascadeType.ALL)
-    private bookEntity bookEntity;
+    private BookEntity bookEntity;
 
 
    // public AuthorEntity(String firstName, String lastName, bookEntity, bookEntity) {
